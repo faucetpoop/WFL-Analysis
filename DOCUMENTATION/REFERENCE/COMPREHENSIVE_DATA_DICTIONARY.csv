@@ -1,0 +1,26 @@
+OP_ID,Variable_Name,Description,Turner_Domain,Data_Type,Valid_N,Coverage_Pct,Mean,SD,Min,Max,Values,Unit,Source,Phase_Created
+OP003,OP003_price_motive,Price/affordability cited as market shopping motive,Personal,Categorical (numeric),214,100.0,,,0,1,"0, 1",Binary (0/1),Phase 3A - Constructed from market motive question,3A
+OP004,OP004_cleanliness,Food outlet cleanliness perception,External,Categorical (numeric),162,75.7,1.44,0.93,-2.0,2.0,"-2.0, -1.0, 0.0, 1.0, 2.0",Likert (1-5),Phase 0 - Direct survey (Likert scale),0
+OP005,OP005_neighborhood_safety,Neighborhood safety perception,External,Categorical (numeric),161,75.2,1.66,0.78,-2.0,2.0,"-2.0, -1.0, 0.0, 1.0, 2.0",Likert (1-5),Phase 0 - Direct survey (Likert scale),0
+OP006,OP006_reputation,Food outlet reputation perception,External,Categorical (numeric),160,74.8,1.59,0.73,-2.0,2.0,"-2.0, 0.0, 1.0, 2.0",Likert (1-5),Phase 0 - Direct survey (Likert scale),0
+OP007,OP007_infrastructure,Food outlet infrastructure quality perception,External,Categorical (numeric),99,46.3,0.13,0.9,-1.0,1.0,"-1.0, 0.0, 1.0",Likert (1-5),Phase 0 - Direct survey (Likert scale),0
+OP008,OP008_marketing_regulation,Marketing and regulation dimension (NOT MEASURED),External,Categorical (numeric),0,0.0,,,,,,N/A,NOT MEASURED - Turner Framework incomplete,N/A
+OP009,OP009_travel_time,Travel time to primary food outlet,External,Continuous,125,58.4,5.92,4.42,0.0,30.0,,Minutes,Phase 0 - Direct survey,0
+OP010,OP010_shopping_frequency,Total shopping visits per month across all outlet types,Personal,Continuous,214,100.0,23.53,25.39,0.0,104.0,,Visits per month,Phase 3A - Summed from outlet-specific frequencies,3A
+OP011,OP011_accessibility_tier,Accessibility perception (Close vs Far based on travel time),External,Categorical (text),125,58.4,,,,,"Close, Far",Categorical,Phase 1 - Derived from OP009,1
+OP012,OP012_monthly_food_expenditure,Total monthly household food expenditure,Personal,Continuous,142,66.4,8700084.57,15874416.53,9.0,150000000.0,,VND per month,Phase 0 - Aggregated from daily/weekly,0
+OP013,OP013_expenditure_time_unit,"Time unit for food expenditure reporting (daily, weekly, monthly)",Personal,Categorical (text),144,67.3,,,,,"day, month, week",Categorical,Phase 3A - Extracted from expenditure question,3A
+OP015,OP015_affordability_motive,Affordability motive (duplicate of OP003 - price motive),Personal,Categorical (numeric),214,100.0,,,0,1,"0, 1",Binary (0/1),Phase 3A - Duplicate variable,3A
+OP016,OP016_budget_share_tier,Food budget share category (Low/Medium/High tertiles),Personal,Categorical (text),124,57.9,,,,,"High, Low, Medium",Categorical,Phase 1 - Derived from OP016_budget_share_pct,1
+OP016,OP016_budget_share_pct,Food budget share (percentage of total expenditure),Personal,Continuous,124,57.9,50.66,98.02,5.294117647058824e-05,750.0,,Percentage (0-100),Phase 0 - Calculated,0
+OP017,OP017_cooking_source,Primary cooking fuel/energy source,Personal,Categorical (text),160,74.8,,,,,"charcoal, electricity, gas",Categorical,Phase 0 - Direct survey,0
+OP018,OP018_water_source,Primary household water source,Personal,Categorical (text),161,75.2,,,,,"no, yes",Categorical,Phase 0 - Direct survey,0
+OP019,OP019_water_distance,Distance to primary water source,Personal,Categorical (numeric),99,46.3,-0.59,0.73,-1.0,1.0,"-1.0, 0.0, 1.0",Meters or time,Phase 0 - Direct survey,0
+OP021,OP021_health_motive,Health cited as market shopping motive,Personal,Categorical (numeric),214,100.0,,,0,1,"0, 1",Binary (0/1),Phase 3A - Constructed from market motive question,3A
+OP022,OP022_trust_motive,Trust/reliability cited as market shopping motive,Personal,Categorical (numeric),214,100.0,,,0,1,"0, 1",Binary (0/1),Phase 3A - Constructed from market motive question,3A
+OP023,OP023_food_env_perception,Overall food environment perception composite,Personal,Categorical (numeric),158,73.8,1.75,0.68,-2.0,2.0,"-2.0, -1.0, 0.0, 1.0, 2.0",Likert (1-5),Phase 3A - Likert scale response,3A
+OP025,OP025_neighborhood_safety_tier,Neighborhood safety category (Low vs High),External,Categorical (text),162,75.7,,,,,"High, Low",Categorical,Phase 1 - Derived from OP025_neighborhood_safety_index,1
+OP025,OP025_neighborhood_safety_index,Neighborhood safety composite index,External,Categorical (numeric),162,75.7,1.56,0.6,-2.0,2.0,"-2.0, -0.3333333333333333, 0.0, 0.3333333333333333, 0.6666666666666666, 1.0, 1.3333333333333333, 1.5, 1.6666666666666667, 2.0",Index (continuous),Phase 1 - Composite from OP005,1
+OP028,OP028_frequency_variation,Outlet frequency variation (SD of shopping frequency across outlet types),Personal,Continuous,214,100.0,5.89,5.94,0.0,17.918333255821164,,Standard deviation,Phase 3A - Calculated variation index,3A
+OP029,OP029_HDDS,Household Dietary Diversity Score (24-hour recall),Outcome,Continuous,214,100.0,5.07,3.78,0.0,15.0,,Food groups (0-12),Phase 0 - Direct survey,0
+OP033,OP033_diet_quality_tier,Diet quality category based on HDDS (Low/Medium/High),Outcome,Categorical (text),214,100.0,,,,,"Adequate, Diverse, Poor",Categorical,Phase 1 - Derived from OP029_HDDS,1

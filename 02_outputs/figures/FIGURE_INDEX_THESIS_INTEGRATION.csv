@@ -1,0 +1,6 @@
+Figure_Number,Filename,Description,Phase_Created,Thesis_Chapter,Section
+Figure 1,Phase_2_HDDS_Distribution.png,HDDS Distribution (histogram),Phase 2,Chapter 4,Descriptive Results
+Figure 2,Phase_2_T2_Comparisons_Boxplots.png,"HDDS by Accessibility, Affordability, Safety (box plots)",Phase 2,Chapter 4,T2 Analysis
+Figure 3,Figure_3_HDDS_by_Affordability_Tertiles.png,HDDS by Affordability Tertiles (box plot),Phase 4,Chapter 4,Stratified Analysis
+Figure 4,Figure_4_HDDS_by_Food_Safety.png,HDDS by Food Safety Perception (box plot),Phase 4,Chapter 4,Stratified Analysis
+Figure 5,Figure_5_Standardized_Coefficients.png,Top 10 Standardized Predictors (bar chart),Phase 4,Chapter 4,Effect Sizes

@@ -1,0 +1,14 @@
+Table_Number,Filename,Description,Phase_Created,Thesis_Chapter,Section
+Table 1A,Table_1A_Descriptive_Continuous.csv,Descriptive Statistics - Continuous Variables,Phase 1,Chapter 4,Descriptive Results
+Table 1B,Table_1B_Descriptive_Categorical.csv,Descriptive Statistics - Categorical Variables,Phase 1,Chapter 4,Descriptive Results
+Table 2A,Table_2A_Accessibility_Comparison.csv,HDDS by Accessibility Perception,Phase 2,Chapter 4,T2 Analysis
+Table 2B,Table_2B_Affordability_Comparison.csv,HDDS by Affordability Perception (3 groups),Phase 2,Chapter 4,T2 Analysis
+Table 2C,Table_2C_Safety_Comparison.csv,HDDS by Food Safety Perception,Phase 2,Chapter 4,T2 Analysis
+Table 3A,Table_3A_Correlation_Matrix_Pearson.csv,Pearson Correlation Matrix (12 predictors),Phase 3,Chapter 4,Correlation Analysis
+Table 3B,Table_3B_Correlation_Matrix_Spearman.csv,Spearman Correlation Matrix (12 predictors),Phase 3,Appendix,Supplementary
+Table 3C,Table_3C_HDDS_Correlations.csv,Bivariate HDDS Correlations with Significance,Phase 3,Chapter 4,Correlation Analysis
+Table 4A,Table_4A_External_Domain_Regression.csv,External Domain Regression (5 predictors),Phase 3,Chapter 4,Regression Results
+Table 4B,Table_4B_Personal_Domain_Regression.csv,Personal Domain Regression (8 predictors),Phase 3,Appendix,Supplementary
+Table 4C,Table_4C_Full_Framework_Regression.csv,Full Turner Framework Regression (14 predictors),Phase 3,Chapter 4,Regression Results
+Table 4D,Table_4D_Interaction_Effects.csv,Interaction Effects (Accessibility × Affordability),Phase 3,Appendix,Exploratory
+Table 5,Table_5_Standardized_Coefficient_Ranking.csv,Standardized Coefficient Rankings,Phase 3,Chapter 4,Effect Sizes

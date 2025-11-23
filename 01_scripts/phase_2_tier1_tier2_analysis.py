@@ -150,7 +150,7 @@ categorical_vars = {
     'OP016_budget_share_tier': 'Affordability Tier',
     'OP017_cooking_source': 'Cooking Source',
     'OP018_water_source': 'Water Source',
-    'OP025_food_safety_tier': 'Food Safety Tier',
+    'OP025_neighborhood_safety_tier': 'Neighborhood Safety Tier',
     'OP033_diet_quality_tier': 'Diet Quality Tier'
 }
 
@@ -290,14 +290,14 @@ print(f"\n✓ Table 2B saved: Table_2B_Affordability_Comparison.csv")
 print()
 
 # ----------------------------------------------------------------------------
-# TASK 2C: HDDS by Food Safety (OP025)
+# TASK 2C: HDDS by Neighborhood Safety (OP025)
 # ----------------------------------------------------------------------------
 
-print("TASK 2C: HDDS by Food Safety Tier (OP025)")
+print("TASK 2C: HDDS by Neighborhood Safety Tier (OP025)")
 print("-" * 80)
 
-# Group by safety
-t2c_data = household_df.groupby('OP025_food_safety_tier').agg({
+# Group by neighborhood safety
+t2c_data = household_df.groupby('OP025_neighborhood_safety_tier').agg({
     'OP029_HDDS': ['count', 'mean', 'std'],
     'OP033_diet_quality_tier': lambda x: (x == 'Diverse (7+)').sum() / len(x) * 100 if 'Diverse (7+)' in x.values else 0
 }).round(2)
@@ -306,7 +306,7 @@ t2c_data.columns = ['N', 'HDDS_Mean', 'HDDS_SD', 'Diet_Diverse_Pct']
 t2c_data = t2c_data.reset_index()
 
 # Perform t-test (Low vs High)
-groups_safety = household_df.groupby('OP025_food_safety_tier')['OP029_HDDS'].apply(list)
+groups_safety = household_df.groupby('OP025_neighborhood_safety_tier')['OP029_HDDS'].apply(list)
 if len(groups_safety) >= 2:
     group_names_safety = list(groups_safety.index)
     t_stat_safety, p_value_safety = stats.ttest_ind(
@@ -379,10 +379,10 @@ axes[1].set_title('HDDS by Affordability Tier')
 axes[1].set_xlabel('Affordability (OP016)')
 axes[1].set_ylabel('HDDS Score')
 
-# OP025: Safety
-household_df.boxplot(column='OP029_HDDS', by='OP025_food_safety_tier', ax=axes[2])
-axes[2].set_title('HDDS by Food Safety Tier')
-axes[2].set_xlabel('Food Safety (OP025)')
+# OP025: Neighborhood Safety
+household_df.boxplot(column='OP029_HDDS', by='OP025_neighborhood_safety_tier', ax=axes[2])
+axes[2].set_title('HDDS by Neighborhood Safety Tier')
+axes[2].set_xlabel('Neighborhood Safety (OP025)')
 axes[2].set_ylabel('HDDS Score')
 
 plt.tight_layout()
@@ -443,7 +443,7 @@ Key frequencies documented in Table_1B_Descriptive_Categorical.csv
 - Effect size (eta-squared): {eta_sq:.3f}
 - Statistical significance: {'YES' if p_value_anova < 0.05 else 'NO'}
 
-### OP025: Food Safety × HDDS
+### OP025: Neighborhood Safety × HDDS
 {t2c_data.to_string(index=False)}
 
 **Interpretation:**
@@ -451,6 +451,8 @@ Key frequencies documented in Table_1B_Descriptive_Categorical.csv
 - p-value: {p_value_safety:.3f}
 - Effect size (Cohen's d): {effect_size_safety:.3f}
 - Statistical significance: {'YES' if p_value_safety < 0.05 else 'NO'}
+
+**Note:** OP025 measures NEIGHBORHOOD safety/quality (composite of clean, safe, reputation), NOT food safety.
 
 ## Key Findings
 
@@ -461,7 +463,7 @@ Key frequencies documented in Table_1B_Descriptive_Categorical.csv
 ### Group Comparison Insights
 1. **Accessibility Effect**: Access proximity {'shows significant' if p_value < 0.05 else 'does not show significant'} association with HDDS (p={p_value:.3f})
 2. **Affordability Effect**: Budget share {'shows significant' if p_value_anova < 0.05 else 'does not show significant'} differences in HDDS across tiers (p={p_value_anova:.3f})
-3. **Safety Effect**: Food safety perception {'shows significant' if p_value_safety < 0.05 else 'does not show significant'} association with HDDS (p={p_value_safety:.3f})
+3. **Neighborhood Safety Effect**: Neighborhood safety/quality perception {'shows significant' if p_value_safety < 0.05 else 'does not show significant'} association with HDDS (p={p_value_safety:.3f})
 
 ## Outputs Created
 

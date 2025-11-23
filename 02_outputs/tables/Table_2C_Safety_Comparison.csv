@@ -1,3 +1,3 @@
-OP025_food_safety_tier,N,HDDS_Mean,HDDS_SD,Diet_Diverse_Pct,t_statistic,p_value,cohens_d,significant
+OP025_neighborhood_safety_tier,N,HDDS_Mean,HDDS_SD,Diet_Diverse_Pct,t_statistic,p_value,cohens_d,significant
 High,106,6.24,2.89,0,-2.578092024782449,0.010836317200617054,-0.4259013106314335,Yes
 Low,56,7.43,2.62,0,-2.578092024782449,0.010836317200617054,-0.4259013106314335,Yes

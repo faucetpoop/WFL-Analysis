@@ -432,13 +432,17 @@ def create_budget_share_tier_CORRECTED(household_df):
 
     return household_df
 
-def create_food_safety_tier(household_df):
+def create_neighborhood_safety_tier(household_df):
     """
-    OP025: Food Safety Tier (T2 STRATIFICATION VARIABLE)
-    Binary: Low / High based on median split of safety index
+    OP025: Neighborhood Safety Tier (T2 STRATIFICATION VARIABLE)
+    Binary: Low / High based on median split of neighborhood safety index
+    Based on respondent perceptions of neighborhood characteristics:
+    - clean: "This neighborhood is clean"
+    - safe: "This neighborhood is safe"
+    - reputation: "This neighborhood has a good reputation"
     Index = mean(clean, safe, reputation)
     """
-    logger.info("Constructing OP025: Food Safety Tier")
+    logger.info("Constructing OP025: Neighborhood Safety Tier")
 
     # Check for required variables
     safety_vars = ['clean', 'safe', 'reputation']
@@ -448,20 +452,20 @@ def create_food_safety_tier(household_df):
         logger.error(f"Missing variables for OP025: {missing_vars}")
         return household_df
 
-    # Calculate safety index (mean of components)
-    household_df['OP025_safety_index'] = household_df[safety_vars].mean(axis=1)
+    # Calculate neighborhood safety index (mean of components)
+    household_df['OP025_neighborhood_safety_index'] = household_df[safety_vars].mean(axis=1)
 
     # Create binary tier (median split)
-    median_safety = household_df['OP025_safety_index'].median()
-    household_df['OP025_food_safety_tier'] = household_df['OP025_safety_index'].apply(
+    median_safety = household_df['OP025_neighborhood_safety_index'].median()
+    household_df['OP025_neighborhood_safety_tier'] = household_df['OP025_neighborhood_safety_index'].apply(
         lambda x: 'High' if pd.notna(x) and x >= median_safety else ('Low' if pd.notna(x) else np.nan)
     )
 
     # Log distribution
-    dist = household_df['OP025_food_safety_tier'].value_counts()
+    dist = household_df['OP025_neighborhood_safety_tier'].value_counts()
     logger.info(f"OP025 distribution (median={median_safety:.2f}):")
     for tier, count in dist.items():
-        logger.info(f"  {tier}: {count} ({count/household_df['OP025_food_safety_tier'].notna().sum()*100:.1f}%)")
+        logger.info(f"  {tier}: {count} ({count/household_df['OP025_neighborhood_safety_tier'].notna().sum()*100:.1f}%)")
 
     return household_df
 
@@ -503,10 +507,10 @@ def construct_external_domain(household_df, vendor_df):
     """
     logger.info("Constructing External Domain variables (OP001-OP008)")
 
-    # OP004-OP007: Quality perceptions (already in data)
+    # OP004-OP007: Neighborhood quality perceptions (already in data)
     quality_vars = {
         'OP004_cleanliness': 'clean',
-        'OP005_food_safety': 'safe',
+        'OP005_neighborhood_safety': 'safe',  # "This neighborhood is safe"
         'OP006_reputation': 'reputation',
         'OP007_infrastructure': 'infrastructure'
     }
@@ -598,12 +602,12 @@ def create_codebook(household_df):
             'domain': 'Personal - Affordability',
             'role': 'T2 Stratification'
         },
-        'OP025_food_safety_tier': {
-            'description': 'Food safety perception tier (median split)',
+        'OP025_neighborhood_safety_tier': {
+            'description': 'Neighborhood safety/quality perception tier (median split) - composite of cleanliness, safety, and reputation',
             'type': 'categorical',
             'values': 'Low, High',
             'op_id': 'OP025',
-            'domain': 'Emergent',
+            'domain': 'External - Neighborhood',
             'role': 'T2 Stratification'
         },
         'OP033_diet_quality_tier': {
@@ -671,7 +675,7 @@ def main():
     # T2 Stratification variables
     household_df = create_accessibility_tier(household_df)
     household_df = create_budget_share_tier_CORRECTED(household_df)  # CORRECTED
-    household_df = create_food_safety_tier(household_df)
+    household_df = create_neighborhood_safety_tier(household_df)
 
     # Derived outcome
     household_df = create_diet_quality_tier(household_df)
@@ -749,7 +753,7 @@ def main():
     logger.info(f"  Monthly Expenditure (OP012): {household_df['OP012_monthly_food_expenditure'].notna().sum()} ({household_df['OP012_monthly_food_expenditure'].notna().sum()/len(household_df)*100:.1f}%)")
     logger.info(f"  Accessibility (OP011): {household_df['OP011_accessibility_tier'].notna().sum()} ({household_df['OP011_accessibility_tier'].notna().sum()/len(household_df)*100:.1f}%)")
     logger.info(f"  Budget Share (OP016): {household_df['OP016_budget_share_tier'].notna().sum() if 'OP016_budget_share_tier' in household_df.columns else 0} ({household_df['OP016_budget_share_tier'].notna().sum()/len(household_df)*100:.1f}% if 'OP016_budget_share_tier' in household_df.columns else 0)%)")
-    logger.info(f"  Food Safety (OP025): {household_df['OP025_food_safety_tier'].notna().sum()} ({household_df['OP025_food_safety_tier'].notna().sum()/len(household_df)*100:.1f}%)")
+    logger.info(f"  Neighborhood Safety (OP025): {household_df['OP025_neighborhood_safety_tier'].notna().sum()} ({household_df['OP025_neighborhood_safety_tier'].notna().sum()/len(household_df)*100:.1f}%)")
 
     logger.info(f"\nCORRECTION IMPACT:")
     logger.info(f"  BEFORE: Budget Share coverage = 26.6% (57/214) - INCORRECT")

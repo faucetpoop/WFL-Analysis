@@ -13,9 +13,9 @@ OP017_cooking_source,Cooking Source,charcoal,1,0.46728971962616817
 OP018_water_source,Water Source,yes,160,74.76635514018692
 OP018_water_source,Water Source,nan,53,24.766355140186917
 OP018_water_source,Water Source,no,1,0.46728971962616817
-OP025_food_safety_tier,Food Safety Tier,High,106,49.532710280373834
-OP025_food_safety_tier,Food Safety Tier,Low,56,26.168224299065418
-OP025_food_safety_tier,Food Safety Tier,nan,52,24.299065420560748
+OP025_neighborhood_safety_tier,Neighborhood Safety Tier,High,106,49.532710280373834
+OP025_neighborhood_safety_tier,Neighborhood Safety Tier,Low,56,26.168224299065418
+OP025_neighborhood_safety_tier,Neighborhood Safety Tier,nan,52,24.299065420560748
 OP033_diet_quality_tier,Diet Quality Tier,Diverse,86,40.18691588785047
 OP033_diet_quality_tier,Diet Quality Tier,Poor,71,33.177570093457945
 OP033_diet_quality_tier,Diet Quality Tier,Adequate,57,26.635514018691588

@@ -11,12 +11,11 @@ Analyst: Senior Data Scientist Skill
 ## Tier 1: Descriptive Statistics
 
 ### Continuous Variables (N=5)
-                      Variable                Label   N  Missing          Mean           SD  Min           Q25        Median       Q75         Max  Skewness  Kurtosis
-             OP009_travel_time    Travel Time (min) 125       89  5.920000e+00 4.415150e+00  0.0  3.000000e+00  5.000000e+00       7.0        30.0  2.189982  7.413424
-OP012_monthly_food_expenditure     Food Expenditure 142       72  8.700085e+06 1.587442e+07  9.0  3.600000e+06  6.000000e+06 9000000.0 150000000.0  7.559622 61.312482
-          OP019_water_distance Water Distance (min)  99      115 -5.858586e-01 7.285728e-01 -1.0 -1.000000e+00 -1.000000e+00       0.0         1.0  1.436301  0.455698
-                    OP029_HDDS    HDDS (Primary DV) 214        0  5.074766e+00 3.775883e+00  0.0  0.000000e+00  6.000000e+00       8.0        15.0 -0.052753 -1.135385
-            OP025_safety_index         Safety Index 162       52  1.564815e+00 6.037181e-01 -2.0  1.333333e+00  1.666667e+00       2.0         2.0 -2.132290  7.255768
+                      Variable                Label   N  Missing          Mean           SD  Min       Q25    Median       Q75         Max  Skewness  Kurtosis
+             OP009_travel_time    Travel Time (min) 125       89  5.920000e+00 4.415150e+00  0.0       3.0       5.0       7.0        30.0  2.189982  7.413424
+OP012_monthly_food_expenditure     Food Expenditure 142       72  8.700085e+06 1.587442e+07  9.0 3600000.0 6000000.0 9000000.0 150000000.0  7.559622 61.312482
+          OP019_water_distance Water Distance (min)  99      115 -5.858586e-01 7.285728e-01 -1.0      -1.0      -1.0       0.0         1.0  1.436301  0.455698
+                    OP029_HDDS    HDDS (Primary DV) 214        0  5.074766e+00 3.775883e+00  0.0       0.0       6.0       8.0        15.0 -0.052753 -1.135385
 
 ### Categorical Variables (N=6)
 Key frequencies documented in Table_1B_Descriptive_Categorical.csv
@@ -46,16 +45,18 @@ OP016_budget_share_tier  N  HDDS_Mean  HDDS_SD  Diet_Diverse_Pct  F_statistic  p
 - Effect size (eta-squared): 0.015
 - Statistical significance: NO
 
-### OP025: Food Safety × HDDS
-OP025_food_safety_tier   N  HDDS_Mean  HDDS_SD  Diet_Diverse_Pct  t_statistic  p_value  cohens_d significant
-                  High 106       6.24     2.89                 0    -2.578092 0.010836 -0.425901         Yes
-                   Low  56       7.43     2.62                 0    -2.578092 0.010836 -0.425901         Yes
+### OP025: Neighborhood Safety × HDDS
+OP025_neighborhood_safety_tier   N  HDDS_Mean  HDDS_SD  Diet_Diverse_Pct  t_statistic  p_value  cohens_d significant
+                          High 106       6.24     2.89                 0    -2.578092 0.010836 -0.425901         Yes
+                           Low  56       7.43     2.62                 0    -2.578092 0.010836 -0.425901         Yes
 
 **Interpretation:**
 - t-statistic: -2.578
 - p-value: 0.011
 - Effect size (Cohen's d): -0.426
 - Statistical significance: YES
+
+**Note:** OP025 measures NEIGHBORHOOD safety/quality (composite of clean, safe, reputation), NOT food safety.
 
 ## Key Findings
 
@@ -66,7 +67,7 @@ OP025_food_safety_tier   N  HDDS_Mean  HDDS_SD  Diet_Diverse_Pct  t_statistic  p
 ### Group Comparison Insights
 1. **Accessibility Effect**: Access proximity does not show significant association with HDDS (p=0.912)
 2. **Affordability Effect**: Budget share does not show significant differences in HDDS across tiers (p=0.396)
-3. **Safety Effect**: Food safety perception shows significant association with HDDS (p=0.011)
+3. **Neighborhood Safety Effect**: Neighborhood safety/quality perception shows significant association with HDDS (p=0.011)
 
 ## Outputs Created
 
@@ -99,4 +100,4 @@ OP025_food_safety_tier   N  HDDS_Mean  HDDS_SD  Diet_Diverse_Pct  t_statistic  p
 
 ---
 Phase 2 Status: COMPLETE
-Generated: 2025-11-23 19:04:43
+Generated: 2025-11-23 19:50:43

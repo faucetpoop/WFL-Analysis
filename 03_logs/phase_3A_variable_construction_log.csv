@@ -1,0 +1,9 @@
+Variable,Source,Type,Coverage_N,Coverage_Pct,Mean,Description
+OP003_price_motive,reason_003,Binary,126,58.87850467289719,0.037383177570093455,Price/affordability cited as market shopping motive
+OP010_shopping_frequency,"supermarket_freq, largesupermarket_freq, market_freq, streetven_freq, wholesaler_freq, retail_freq",Continuous,160,74.76635514018692,31.46875,Total shopping visits per month across all outlet types
+OP013_expenditure_time_unit,foodexp_timeunit,Categorical,144,67.28971962616822,,Time unit for food expenditure reporting (daily/weekly/monthly)
+OP015_affordability_motive,OP003_price_motive (duplicate),Binary,214,100.0,0.037383177570093455,Affordability motive (duplicate of OP003)
+OP021_health_motive,reason_003,Binary,126,58.87850467289719,0.06542056074766354,Health cited as market shopping motive
+OP022_trust_motive,reason_003,Binary,126,58.87850467289719,0.03271028037383177,Trust cited as market shopping motive
+OP023_food_env_perception,foodenvironment_002,Ordinal,158,73.83177570093457,1.7531645569620253,Perceived quality of neighborhood food environment
+OP028_frequency_variation,"supermarket_freq, largesupermarket_freq, market_freq, streetven_freq, wholesaler_freq, retail_freq",Continuous,214,100.0,5.890696551918034,Standard deviation of shopping frequencies across outlets (diversity measure)

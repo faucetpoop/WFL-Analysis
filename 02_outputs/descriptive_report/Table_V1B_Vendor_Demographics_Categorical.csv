@@ -1,0 +1,17 @@
+Variable,Category,N,Percent
+Vendor Gender,female,174,74.35897435897436
+Vendor Gender,male,59,25.213675213675213
+Vendor Gender,X,1,0.4273504273504274
+Vendor Type,food truck,58,20.938628158844764
+Vendor Type,street vendor,57,20.577617328519857
+Vendor Type,restaurant,55,19.855595667870034
+Vendor Type,marketvendor,50,18.050541516245488
+Vendor Type,retailer,41,14.801444043321299
+Vendor Type,supermarket,10,3.6101083032490973
+Vendor Type,wholesaler,6,2.166064981949458
+Ownership Status,yes,205,92.76018099547511
+Ownership Status,now,16,7.239819004524888
+Ethnicity,kinh,222,98.66666666666667
+Ethnicity,tay,1,0.4444444444444444
+Ethnicity,muong,1,0.4444444444444444
+Ethnicity,other,1,0.4444444444444444

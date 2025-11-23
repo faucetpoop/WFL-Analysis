@@ -1,0 +1,8 @@
+Variable,B,SE,t,p,Beta,Note
+Model Summary,,,,,,"N=75, R²=0.081, Adj R²=0.014, F(5,69)=1.21, p=0.314"
+Intercept,9.204,1.081,8.516,0.000,,
+OP004_cleanliness,-0.261,0.311,-0.839,0.404,-0.109,ns
+OP005_neighborhood_safety,-0.580,0.467,-1.242,0.219,-0.149,ns
+OP006_reputation,-0.341,0.428,-0.797,0.428,-0.102,ns
+OP007_infrastructure,0.111,0.330,0.336,0.738,0.040,ns
+OP009_travel_time,-0.103,0.082,-1.257,0.213,-0.149,ns

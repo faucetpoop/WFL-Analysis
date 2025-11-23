@@ -1,0 +1,7 @@
+variable_name,n_valid,pct_complete,description,type,range,op_id,domain,role,unit,values
+OP029_HDDS,214,100.0,Household Dietary Diversity Score (count of food groups),numeric,0-16,OP029,Outcome,Primary DV,,
+OP012_monthly_food_expenditure,64,29.906542056074763,Monthly food expenditure (standardized),numeric,,OP012,Personal - Affordability,IV,currency per month,
+OP011_accessibility_tier,98,45.794392523364486,Accessibility tier (Close ≤5min / Far >5min),categorical,,OP011,Personal - Accessibility,T2 Stratification,,"Close, Far"
+OP016_budget_share_tier,57,26.635514018691588,Food budget share tier (tertiles),categorical,,OP016,Personal - Affordability,T2 Stratification,,"Low, Medium, High"
+OP025_food_safety_tier,162,75.70093457943925,Food safety perception tier (median split),categorical,,OP025,Emergent,T2 Stratification,,"Low, High"
+OP033_diet_quality_tier,214,100.0,Diet quality classification,categorical,,OP033,Outcome,Derived DV,,"Poor (<4), Adequate (4-6), Diverse (7+)"

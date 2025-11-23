@@ -1,0 +1,581 @@
+---
+# Turner Framework Operationalization Master - YAML Format
+# AI-Optimized for parsing and programmatic access
+# Generated: 2025-11-23
+# Version: 1.0
+
+metadata:
+  title: "Turner Framework Operationalization Master Index"
+  date: "2025-11-23"
+  version: "1.0"
+  total_operationalizations: 33
+  in_data_count: 31
+  planned_only_count: 2
+  domains:
+    - External
+    - Personal
+    - Emergent
+    - Outcome
+
+summary_statistics:
+  external_domain:
+    total: 8
+    in_data: 7
+    planned_only: 1
+    note: "OP008 (Marketing & Regulation) not measured"
+  personal_domain:
+    total: 16
+    in_data: 15
+    planned_only: 1
+    note: "OP024 (Food Preference) may not be systematically collected"
+  emergent_dimensions:
+    total: 4
+    in_data: 3
+    planned_only: 1
+    note: "OP027 (Gender) status to be verified"
+  outcome_variables:
+    total: 5
+    in_data: 5
+    planned_only: 0
+
+# ==================== EXTERNAL DOMAIN ====================
+external_domain:
+  - op_id: OP001
+    turner_component: Availability
+    theoretical_construct: "Vendor Availability - Nutrient-dense Food Groups"
+    data_variable: "foodgroups_001_*"
+    data_file: "data_vendor_survey.csv"
+    odk_variable: "foodgroups_001_cereals through foodgroups_001_oils_fats"
+    response_format: "Binary (yes/no per food group)"
+    coding: "1=yes, 0=no"
+    role: "IV (external domain descriptor)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "% vendors selling nutrient-dense vs. processed groups"
+    status: "in_data"
+
+  - op_id: OP002
+    turner_component: Availability
+    theoretical_construct: "Outlet Classification"
+    data_variable: "vendor_type"
+    data_file: "data_vendor_survey.csv"
+    odk_variable: "vendor_type OR outlet_classification"
+    response_format: "Categorical"
+    coding: "wet_market, supermarket, street_vendor, wholesaler, retail_shop"
+    role: "IV (external domain descriptor)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Stratification variable for outlet type comparison"
+    status: "in_data"
+
+  - op_id: OP003
+    turner_component: Prices
+    theoretical_construct: "Price Affordability - Perceived"
+    data_variable: "reason_cheap_motive"
+    data_file: "data_household_survey.csv"
+    odk_variable: "reason_003"
+    response_format: "Binary"
+    coding: "1=cheap cited as motive, 0=not cited"
+    role: "IV (external domain proxy)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "⚠️ Perceived price proxy; no direct price audit; single-item measure; weak proxy for actual prices"
+    severity: "medium"
+    status: "in_data"
+
+  - op_id: OP004
+    turner_component: "Vendor & Product Properties"
+    theoretical_construct: "Perceived Food Safety/Quality - Vendor Cleanliness"
+    data_variable: "vendor_clean"
+    data_file: "data_household_survey.csv"
+    odk_variable: "clean"
+    response_format: "Ordinal (1-5 or 1-7)"
+    coding: "1=very dirty, 5=very clean (or 1-7 scale)"
+    role: "IV (component of safety index)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Aggregate into safety_quality_index; single-item perception"
+    aggregated_into: "OP025"
+    status: "in_data"
+
+  - op_id: OP005
+    turner_component: "Vendor & Product Properties"
+    theoretical_construct: "Perceived Food Safety/Quality - Food Safety"
+    data_variable: "vendor_safe"
+    data_file: "data_household_survey.csv"
+    odk_variable: "safe"
+    response_format: "Ordinal (1-5 or 1-7)"
+    coding: "1=very unsafe, 5=very safe (or 1-7 scale)"
+    role: "IV (component of safety index)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Aggregate into safety_quality_index; single-item perception"
+    aggregated_into: "OP025"
+    status: "in_data"
+
+  - op_id: OP006
+    turner_component: "Vendor & Product Properties"
+    theoretical_construct: "Perceived Vendor Trust/Reputation"
+    data_variable: "vendor_reputation"
+    data_file: "data_household_survey.csv"
+    odk_variable: "reputation"
+    response_format: "Ordinal (1-5 or 1-7)"
+    coding: "1=untrustworthy, 5=highly trustworthy (or 1-7 scale)"
+    role: "IV (component of safety index)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Aggregate into safety_quality_index; desirability component"
+    aggregated_into: "OP025"
+    status: "in_data"
+
+  - op_id: OP007
+    turner_component: "Vendor & Product Properties"
+    theoretical_construct: "Vendor Infrastructure Adequacy"
+    data_variable: "vendor_infrastructure"
+    data_file: "data_vendor_survey.csv"
+    odk_variable: "infrastructure"
+    response_format: "Categorical/Ordinal"
+    coding: "Categories for cold chain, storage quality, cleanliness"
+    role: "IV (external domain descriptor)"
+    research_questions: ["RQ1"]
+    limitations: "Vendor-reported not HH-observed; limited information"
+    status: "in_data"
+
+  - op_id: OP008
+    turner_component: "Marketing & Regulation"
+    theoretical_construct: "Marketing & Regulation Impacts"
+    data_variable: null
+    data_file: null
+    odk_variable: null
+    response_format: null
+    coding: null
+    role: "Not measured - limitation only"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "⚠️ HIGH SEVERITY: Direct observation of marketing/advertising not conducted; regulatory enforcement not audited"
+    severity: "high"
+    status: "planned_only"
+
+# ==================== PERSONAL DOMAIN ====================
+personal_domain:
+  - op_id: OP009
+    turner_component: Accessibility
+    theoretical_construct: "Travel Time - General"
+    data_variable: "time_to_[outlet_type]"
+    data_file: "data_household_survey.csv"
+    odk_variable: "transportation_001 through transportation_007"
+    response_format: "Continuous (minutes)"
+    coding: "numeric (minutes)"
+    role: "IV (accessibility tier)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Measured travel time for each outlet type; stratify as ≤5 min vs >5 min"
+    feeds_into: "OP011"
+    status: "in_data"
+
+  - op_id: OP010
+    turner_component: Accessibility
+    theoretical_construct: "Travel Frequency"
+    data_variable: "[outlet_type]_freq"
+    data_file: "data_household_survey.csv"
+    odk_variable: "supermarket_freq, market_freq, streetven_freq, etc."
+    response_format: "Categorical/Ordinal"
+    coding: "1=daily, 2=weekly, 3=monthly, 4=occasional"
+    role: "IV (accessibility descriptor)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Outlet diversity index from frequency patterns"
+    status: "in_data"
+
+  - op_id: OP011
+    turner_component: Accessibility
+    theoretical_construct: "Accessibility Tier"
+    data_variable: "accessibility_tier"
+    data_file: "data_household_survey.csv"
+    odk_variable: "Derived from transportation_*"
+    response_format: "Binary"
+    coding: "1=close (≤5 min), 0=far (>5 min)"
+    role: "IV (T2 stratification variable)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Categorical for group comparison; 5-min threshold based on urban context"
+    is_t2_strata: true
+    t2_stratification_priority: "primary"
+    t2_groups: ["Close (≤5 minutes)", "Far (>5 minutes)"]
+    analysis_use: "Tier 2 group comparisons: DDS by accessibility tier"
+    derived_from: ["OP009"]
+    status: "in_data"
+
+  - op_id: OP012
+    turner_component: Affordability
+    theoretical_construct: "Food Expenditure Amount"
+    data_variable: "food_exp_amount"
+    data_file: "data_household_survey.csv"
+    odk_variable: "foodexpenditure"
+    response_format: "Continuous (currency)"
+    coding: "VND or USD per time period"
+    role: "IV (component of affordability)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Currency and time period must be standardized"
+    feeds_into: "OP016"
+    status: "in_data"
+
+  - op_id: OP013
+    turner_component: Affordability
+    theoretical_construct: "Food Expenditure Time Unit"
+    data_variable: "food_exp_period"
+    data_file: "data_household_survey.csv"
+    odk_variable: "foodexp_timeunit"
+    response_format: "Categorical"
+    coding: "daily, weekly, monthly"
+    role: "Control variable for standardization"
+    research_questions: ["RQ1"]
+    limitations: "Standardize all to monthly equivalent"
+    feeds_into: "OP016"
+    status: "in_data"
+
+  - op_id: OP014
+    turner_component: Affordability
+    theoretical_construct: "Income Proxy"
+    data_variable: "income_proxy"
+    data_file: "data_household_survey.csv"
+    odk_variable: "income OR housing/asset variables"
+    response_format: "Categorical/Ordinal"
+    coding: "categorical (low/medium/high) or asset indices"
+    role: "Control variable"
+    research_questions: ["RQ1"]
+    limitations: "⚠️ Direct income may not be collected; use asset proxy; acknowledge limitation"
+    severity: "medium"
+    feeds_into: "OP016"
+    status: "in_data"
+
+  - op_id: OP015
+    turner_component: Affordability
+    theoretical_construct: "Affordability Motive"
+    data_variable: "affordability_motive"
+    data_file: "data_household_survey.csv"
+    odk_variable: "reason_003"
+    response_format: "Binary"
+    coding: "1=affordability is motive, 0=not"
+    role: "IV (affordability descriptor)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Same as OP003; overlaps with perceived price accessibility"
+    status: "in_data"
+
+  - op_id: OP016
+    turner_component: Affordability
+    theoretical_construct: "Food Budget Share (Derived)"
+    data_variable: "food_budget_share_pct"
+    data_file: "data_household_survey.csv"
+    odk_variable: "Derived: foodexpenditure / estimated_income"
+    response_format: "Continuous (%)"
+    coding: "0-100% (or decimal 0-1)"
+    role: "IV (T2 stratification variable)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Analyst-derived; requires income estimation; tertile stratification"
+    is_t2_strata: true
+    t2_stratification_priority: "primary"
+    t2_groups: ["Low", "Medium", "High"]
+    t2_calculation: "Tertile split of food_budget_share_pct"
+    analysis_use: "Tier 2 group comparisons: DDS by affordability tier"
+    derived_from: ["OP012", "OP013", "OP014"]
+    status: "in_data"
+
+  - op_id: OP017
+    turner_component: Convenience
+    theoretical_construct: "Proximity Motive"
+    data_variable: "proximity_motive"
+    data_file: "data_household_survey.csv"
+    odk_variable: "reason_001, reason_002"
+    response_format: "Binary"
+    coding: "1=proximity cited, 0=not"
+    role: "IV (convenience descriptor)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Multi-item; aggregates into convenience score"
+    status: "in_data"
+
+  - op_id: OP018
+    turner_component: Convenience
+    theoretical_construct: "Cooking Infrastructure Access"
+    data_variable: "cooking_source"
+    data_file: "data_household_survey.csv"
+    odk_variable: "cookingsource"
+    response_format: "Categorical"
+    coding: "gas, electricity, charcoal, none, other"
+    role: "IV (convenience component)"
+    research_questions: ["RQ1"]
+    limitations: "Measured as presence/type; part of preparation infrastructure"
+    status: "in_data"
+
+  - op_id: OP019
+    turner_component: Convenience
+    theoretical_construct: "Water Source Access"
+    data_variable: "water_source"
+    data_file: "data_household_survey.csv"
+    odk_variable: "watersource"
+    response_format: "Categorical"
+    coding: "tap water, well, other"
+    role: "IV (convenience component)"
+    research_questions: ["RQ1"]
+    limitations: "Related to preparation convenience; affects food processing"
+    status: "in_data"
+
+  - op_id: OP020
+    turner_component: Convenience
+    theoretical_construct: "Water Distance"
+    data_variable: "water_distance"
+    data_file: "data_household_survey.csv"
+    odk_variable: "waterdistance_001"
+    response_format: "Continuous or Categorical"
+    coding: "meters OR in-house, <50m, <100m, >100m"
+    role: "IV (convenience descriptor)"
+    research_questions: ["RQ1"]
+    limitations: "Secondary to in-home water access"
+    status: "in_data"
+
+  - op_id: OP021
+    turner_component: Desirability
+    theoretical_construct: "Health/Nutrition Motive"
+    data_variable: "health_motive"
+    data_file: "data_household_survey.csv"
+    odk_variable: "reason_004"
+    response_format: "Binary"
+    coding: "1=health is motive, 0=not"
+    role: "IV (desirability component)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Single-item; weak proxy for dietary intention"
+    severity: "medium"
+    status: "in_data"
+
+  - op_id: OP022
+    turner_component: Desirability
+    theoretical_construct: "Trust Motive"
+    data_variable: "trust_motive"
+    data_file: "data_household_survey.csv"
+    odk_variable: "reason_005"
+    response_format: "Binary"
+    coding: "1=trust is motive, 0=not"
+    role: "IV (desirability component; social forces)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Reflects social capital and vendor relationship strength"
+    status: "in_data"
+
+  - op_id: OP023
+    turner_component: Desirability
+    theoretical_construct: "Food Environment Quality Perception"
+    data_variable: "foodenv_quality_perception"
+    data_file: "data_household_survey.csv"
+    odk_variable: "foodenvironment_002"
+    response_format: "Ordinal"
+    coding: "typically 1-5 or 1-7"
+    role: "IV (desirability descriptor)"
+    research_questions: ["RQ1"]
+    limitations: "Neighborhood-level perception; overlaps with safety index"
+    status: "in_data"
+
+  - op_id: OP024
+    turner_component: Desirability
+    theoretical_construct: "Food Preference/Habit"
+    data_variable: "food_preference"
+    data_file: "data_household_survey.csv"
+    odk_variable: "preference_* OR habit_*"
+    response_format: "Categorical"
+    coding: "categorical (e.g., prefer fish, always buy from vendor X)"
+    role: "IV (desirability descriptor)"
+    research_questions: ["RQ1"]
+    limitations: "⚠️ May not be systematically collected; cultural/behavioral"
+    severity: "medium"
+    status: "planned_only"
+
+# ==================== EMERGENT DIMENSIONS ====================
+emergent_dimensions:
+  - op_id: OP025
+    turner_component: "Food Safety"
+    theoretical_construct: "Food Safety Index (Derived)"
+    data_variable: "food_safety_index"
+    data_file: "data_household_survey.csv"
+    odk_variable: "Aggregate: clean + safe + reputation"
+    response_format: "Continuous (0-100)"
+    coding: "0-100 or z-standardized"
+    role: "IV (T2 stratification variable)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Z-standardized aggregate; Cronbach's ω required; overlaps with external vendor domain"
+    is_t2_strata: true
+    t2_stratification_priority: "secondary"
+    t2_groups: ["Low", "High"]
+    t2_calculation: "Median split of food_safety_index"
+    analysis_use: "Tier 2 group comparisons: DDS by safety perception tier"
+    derived_from: ["OP004", "OP005", "OP006"]
+    status: "in_data"
+
+  - op_id: OP026
+    turner_component: "Social Forces"
+    theoretical_construct: "Vendor Relationship - Trust-Based Shopping"
+    data_variable: "trust_based_shopping"
+    data_file: "data_household_survey.csv"
+    odk_variable: "trust_motive (reason_005) + vendor frequency concentration"
+    response_format: "Binary + Continuous"
+    coding: "1=trust is motive, 0=not; Herfindahl concentration index"
+    role: "IV (social capital descriptor)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Reflects intra-community relationships; gender could extend this"
+    derived_from: ["OP022"]
+    status: "in_data"
+
+  - op_id: OP027
+    turner_component: "Social Forces"
+    theoretical_construct: "Food Decision-Maker Gender"
+    data_variable: "food_decision_maker_gender"
+    data_file: "data_household_survey.csv"
+    odk_variable: "gender_food_decisionmaker"
+    response_format: "Categorical"
+    coding: "M, F, joint"
+    role: "IV (stratification for social forces)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "⚠️ Gendered dimension; relevant for women's access/agency"
+    severity: "medium"
+    status: "planned_only"
+
+  - op_id: OP028
+    turner_component: Stability
+    theoretical_construct: "Outlet Usage Frequency Variation"
+    data_variable: "outlet_frequency_variation"
+    data_file: "data_household_survey.csv"
+    odk_variable: "frequency variables: *_freq across outlet types"
+    response_format: "Continuous"
+    coding: "Standard deviation or coefficient of variation"
+    role: "IV (stability descriptor)"
+    research_questions: ["RQ1"]
+    limitations: "⚠️ Single-timepoint limits temporal analysis; within-respondent variation only"
+    severity: "high"
+    derived_from: ["OP010"]
+    status: "in_data"
+
+# ==================== OUTCOME VARIABLES ====================
+outcomes:
+  - op_id: OP029
+    turner_component: "Diet Outcomes"
+    theoretical_construct: "Dietary Diversity Score"
+    data_variable: "DDS"
+    data_file: "data_household_survey.csv"
+    odk_variable: "foodgroups_001_* (11-12 items)"
+    response_format: "Binary per group"
+    coding: "Count (0-12): sum of foodgroup_001_*"
+    role: "Dependent Variable (PRIMARY OUTCOME)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "24-hour recall; cross-sectional; no seasonal variation"
+    analysis_use: "Primary DV for Tier 1-4 analyses; stratified by OP011, OP016, OP025"
+    status: "in_data"
+
+  - op_id: OP030
+    turner_component: "Diet Outcomes"
+    theoretical_construct: "Food Type Quality - Nutrient-Dense"
+    data_variable: "pct_nutrient_dense"
+    data_file: "data_household_survey.csv"
+    odk_variable: "Derived from foodgroups_001_* classification"
+    response_format: "Continuous (%)"
+    coding: "0-100%; analyst-classified"
+    role: "Dependent Variable (SECONDARY)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Classification is analyst judgment"
+    derived_from: ["OP029"]
+    status: "in_data"
+
+  - op_id: OP031
+    turner_component: "Diet Outcomes"
+    theoretical_construct: "Food Type Quality - Processed"
+    data_variable: "pct_processed"
+    data_file: "data_household_survey.csv"
+    odk_variable: "Derived from foodgroups_001_* classification"
+    response_format: "Continuous (%)"
+    coding: "0-100%; analyst-classified"
+    role: "Dependent Variable (SECONDARY)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Inverse of OP030; overlapping dimension"
+    derived_from: ["OP029"]
+    status: "in_data"
+
+  - op_id: OP032
+    turner_component: "Diet Outcomes"
+    theoretical_construct: "Food Type Quality - Composition"
+    data_variable: "diet_composition_tier"
+    data_file: "data_household_survey.csv"
+    odk_variable: "Derived classification: whole/processed"
+    response_format: "Categorical/Ordinal"
+    coding: "1=nutrient-dense, 2=mixed, 3=processed-heavy"
+    role: "Dependent Variable (SECONDARY)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Three categories may be reductive"
+    derived_from: ["OP029", "OP030", "OP031"]
+    status: "in_data"
+
+  - op_id: OP033
+    turner_component: "Diet Outcomes"
+    theoretical_construct: "Diet Quality Category"
+    data_variable: "diet_quality_category"
+    data_file: "data_household_survey.csv"
+    odk_variable: "Derived from DDS + composition"
+    response_format: "Categorical"
+    coding: "Poor, Adequate, Diverse"
+    role: "Dependent Variable (SECONDARY)"
+    research_questions: ["RQ1", "RQ2"]
+    limitations: "Categorical simplification of continuous DDS"
+    derived_from: ["OP029", "OP030", "OP031"]
+    status: "in_data"
+
+# ==================== ANALYSIS STRUCTURE ====================
+analysis_structure:
+  tier_1_descriptive:
+    name: "Tier 1 - Descriptive Statistics"
+    dependent_variables: ["OP029", "OP030", "OP031", "OP032", "OP033"]
+    independent_variables: ["OP001", "OP002", "OP003", "OP004", "OP005", "OP006", "OP007", "OP009", "OP010", "OP012", "OP013", "OP014", "OP015", "OP017", "OP018", "OP019", "OP020", "OP021", "OP022", "OP023", "OP025", "OP026", "OP028"]
+    output: "Table 1 - Summary Statistics by Domain"
+
+  tier_2_group_comparisons:
+    name: "Tier 2 - Group Comparisons"
+    dependent_variables: ["OP029", "OP030", "OP031", "OP032", "OP033"]
+    stratification_variables:
+      - op_id: "OP011"
+        name: "Accessibility Tier"
+        priority: "primary"
+        groups: 2
+      - op_id: "OP016"
+        name: "Affordability Tier"
+        priority: "primary"
+        groups: 3
+      - op_id: "OP025"
+        name: "Food Safety Index Tier"
+        priority: "secondary"
+        groups: 2
+    output: "Table 2a-2d - Group Comparisons by Strata"
+
+  tier_4_framework_assessment:
+    name: "Tier 4 - Framework Assessment"
+    analysis_types:
+      - "Domain comparison (External vs. Personal)"
+      - "Individual variable effect ranking"
+      - "Interaction analysis (OP011 × OP016)"
+    output: "Table 3 - Framework Assessment"
+
+# ==================== DATA FILES ====================
+data_files:
+  household_survey:
+    filename: "data_household_survey.csv"
+    expected_n: null
+    variables_count: "35+"
+    contains_ops: ["OP003", "OP004", "OP005", "OP006", "OP009", "OP010", "OP012", "OP013", "OP014", "OP015", "OP017", "OP018", "OP019", "OP020", "OP021", "OP022", "OP023", "OP024", "OP025", "OP026", "OP027", "OP028", "OP029", "OP030", "OP031", "OP032", "OP033"]
+
+  vendor_survey:
+    filename: "data_vendor_survey.csv"
+    expected_n: null
+    variables_count: "20+"
+    contains_ops: ["OP001", "OP002", "OP007"]
+
+verification_checklist:
+  household_survey_required:
+    - "foodgroups_001_* (11-12 items)"
+    - "reason_001 through reason_005"
+    - "vendor_clean, vendor_safe, vendor_reputation"
+    - "transportation_001 through transportation_007"
+    - "*_freq variables (outlet types)"
+    - "foodexpenditure, foodexp_timeunit"
+    - "cookingsource, watersource, waterdistance"
+    - "foodenvironment_002"
+
+  vendor_survey_required:
+    - "foodgroups_001_* (11-12 items)"
+    - "vendor_type"
+    - "vendor_infrastructure"
+
+---
+# End of YAML

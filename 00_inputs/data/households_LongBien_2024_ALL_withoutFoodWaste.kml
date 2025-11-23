@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name></name>
+    <Style id="sh_red-circle">
+      <IconStyle>
+        <scale>1.3</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
+        <hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+      </IconStyle>
+      <ListStyle>
+        <ItemIcon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle-lv.png</href>
+        </ItemIcon>
+      </ListStyle>
+    </Style>
+    <StyleMap id="msn_red-circle">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#sn_red-circle</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#sh_red-circle</styleUrl>
+      </Pair>
+    </StyleMap>
+
+    
+    <Placemark>
+      <description>
+        Survey Instance: 843e47be-6594-44ea-b70d-819a424df83b
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8955488, 21.0241674
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 6960f569-4abf-491d-9db5-b25b13d3391f
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8851497, 21.0671303
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 1a3ebd17-00bd-4ed6-85ad-0bb93b6291ba
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8918543, 21.0232714
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: c926fe23-7021-4396-87b0-9c837aedbca2
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9005894, 21.0263297
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: d886c368-412f-47f8-99d7-c3f9f87c16ab
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9058155, 21.0729159
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 7d8f4c31-4418-4b25-ab51-d3d729923544
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9063818, 21.0191873
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 1d5b225c-5eb3-4549-ab6b-def2bfa503ea
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8862708, 21.0260575
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 11467830-cbc4-4329-964a-3aef264e21eb
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.887461, 21.0309974
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 1451457c-a5a2-4e7c-9b36-24baee8e58ec
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8878971, 21.0311026
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 52d7bd3c-4f1d-40f8-bb1c-85f14ae6ab15
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8887257, 21.0312063
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 75c349f6-030d-4f26-90ea-b7c3b7c730e6
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8869582, 21.0306168
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: b72e2bd1-7ed7-474d-a88d-a4dabfa23da6
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9187855, 21.0316085
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: cdfbaedd-b064-4b25-a057-1e7bd244926f
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8987204, 21.0411535
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 6eb59ad9-31a0-405e-af92-af90468793d7
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8991607, 21.0414371
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 79da1d79-6ebb-467e-894b-44de00cc93ea
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8986049, 21.0412429
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 927a895f-e2f5-4232-93b6-fd5583a62b1c
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9424505, 21.0312309
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: aaf5c375-9fc6-46a8-8973-27e365d165b2
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8797184, 21.023245
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 214f8c7a-1449-4fa8-a52b-2811785ef2c8
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9403041, 21.0254672
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 57a0de85-75f0-4b56-9771-771fdfb15831
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9419841, 21.0308059
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 96f496f7-5707-4763-bdc3-8bee04205c1c
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9109462, 21.0350372
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 97b7bcc0-bf9a-40dc-b5a5-3a59e1274b8a
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9430591, 21.0317293
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: affb8cce-a0c4-4da6-929f-ac08a88dd152
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9420015, 21.0309413
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 54fe355b-8f32-49c9-b5d3-568d7e4b0bdd
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8979115, 21.026352
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 08e142e0-8910-4ecd-9500-6523b307fb90
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9044521, 21.0469337
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 52834d0d-734c-42bb-a398-acc307d83b5a
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9339046, 21.0395326
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 682bded5-d599-4327-b3fd-2244f64da5d7
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8889173, 21.0312152
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: c8ec793e-538e-40b1-b21a-5d54e0d37bd3
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8885422, 21.0311752
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 6c7f132c-1af6-417a-8597-19bde42627a4
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8878642, 21.0313501
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: ac586c70-74a5-4e4e-ba62-8ca1a7196c66
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8904649, 21.0302047
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 11548d0b-051a-450c-bc20-7db8cb63b9f0
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8908794, 21.0329637
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 9a17a2a1-0af2-45e6-bc8f-b1287a934652
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9088388, 21.0630274
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 4677245a-3add-4f66-b476-de72648bdffe
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9088695, 21.0634076
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: ab29250e-7697-43a2-8b8c-82d0cf0541ff
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.906115, 21.0193872
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 46ca3acc-7988-411f-bc27-ddbc39c152a3
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9069157, 21.0194906
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 34f2309f-b56a-47f6-9ea9-309052fa3520
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.905069, 21.0370662
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: ed364e93-14f3-4ce8-b26a-ebc6f0b52c24
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9079465, 21.0101618
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 9517e62c-9126-41f1-a9ec-9199018c9464
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9084613, 21.0389743
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: c5ccdebf-4534-4b4d-a11c-edbf23307222
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9084695, 21.0389313
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: a014bddc-7275-4105-8aac-3754480e71db
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.909389, 21.0369842
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: a23410d5-30f0-4d68-8cb9-e59a5fcee255
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9113841, 21.0197662
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 213c9c5c-4fd3-41b2-a915-6631e9bda372
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9203387, 21.0272161
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: edfe1636-3e25-42f9-bbc4-ea35f7a0d934
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.920487, 21.0274859
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 9e9fe413-a9ca-4590-8da4-5912becd121a
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9119824, 21.0113727
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: f9a3726b-1054-43d4-b81b-a0937079aef5
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9077913, 21.0117706
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 6d8b18ee-c2f4-485f-a744-bb74706383bb
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9078539, 21.0117797
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 47578d5c-8cf6-445f-a706-0af9e1c08643
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9121359, 21.0114382
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: c860da02-4d92-4dcc-8c7a-32dbf4c83789
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9192905, 21.0314523
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 3ae4c8be-c3fc-4aac-a8c2-e67d52ddcf16
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9192443, 21.0314377
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: e7ae6a9b-d2c4-4b1e-9232-777af8e78e75
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9170231, 21.0347232
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: a266e7ab-cd05-4e91-bf1e-072196482bc9
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9007691, 21.003003
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: af55e5e8-9cef-42a2-ad26-025a8ed8c57e
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9019808, 21.001375
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 508273ee-daba-426a-93ee-93e67e2f1f82
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.902207, 21.0015672
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 48516ecd-bccc-4a3f-8954-3d8deac7a7c0
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8896965, 21.0084181
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 2a01c277-8b88-440c-a0e8-d23be422f4ff
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8892048, 21.0087721
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: ddcb97f4-fef6-4b4b-890d-e7d6cdb15ad4
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.918917, 21.0316823
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 27471173-aafd-4f09-b5e3-96c2e098c137
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9204045, 21.0307575
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 1fddfe89-f0d7-4825-a064-29b870ada6c8
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.907482, 21.0198754
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 0fc2e686-5d02-462c-80aa-8020ef8d1af7
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9095422, 21.0372496
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: c84303cd-a49b-4fc1-8769-13aca83eeb14
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9119774, 21.0393421
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 2e5a3e37-908d-496a-bd87-2bc6c2545b1d
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9190051, 21.0268333
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 069cd92f-c0c8-450a-a462-795992dac2c0
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9203262, 21.0275014
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 769f0b68-e32f-4efb-ab9b-5620a7fd19dd
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9208772, 21.0273198
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 6a314da5-cddd-4697-9b2f-a70140f0fe0f
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9209355, 21.0272542
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 1b02092e-7a55-4fd5-9ae1-0c880330cf7a
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9210436, 21.0273723
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 006ba34e-3eda-47d8-8c4e-a9b1ab37bf7b
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9113807, 21.0405666
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 0d2f812e-82ef-4bfd-8dd3-0c2b8b39ba00
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8991078, 21.0362151
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 9b54a18d-9b01-423d-bad3-81bff6b250ba
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8974896, 21.0365467
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: ce098874-23b8-4864-8ec6-a7596ac536cc
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8984675, 21.0366458
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: b8a24fab-6196-47b8-9b71-17b800ca2e2d
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9232407, 21.051873
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 742f8440-78e5-4080-95c7-6a194a4f45ba
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9232515, 21.0519022
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 86112df0-4dbd-4360-b0c7-66cace95381c
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.902097, 21.0006163
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 76080a31-ea94-4709-a060-3ed6b14f43b2
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9019363, 21.0008763
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: f698cfc2-bf88-45b6-bc2c-af8dc2ce30de
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8903349, 21.0080494
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 5fc81128-3004-45ac-8b02-03e5a4bd0505
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8973372, 21.0136096
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 1ae27ff4-0817-4c14-a110-2d21d2258546
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8994958, 21.0354858
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 06c1b9d1-4e15-4887-a68c-15797debc10b
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8983928, 21.0370516
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 1b127c66-79e5-42ce-860a-b84660f7b409
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8858593, 21.0547646
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 1806b1b5-0179-4ea5-a5f9-d7e74f5d9d69
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9117134, 21.0609538
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: d86a32c6-61ec-4c43-b4cf-ecf74b100cc2
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9122723, 21.0612673
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: d8dd62ec-ed6a-4d0c-83a9-0a6afcc32ffa
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9026627, 20.9999945
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 3d0c8f41-d36c-49b1-ab6a-56b9b86ac131
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8898253, 21.0081431
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 245cecf2-b969-44db-b082-da46991c3151
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8978853, 21.0134189
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 2c7d63d5-60a6-4912-98b0-8fbf71b79679
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9020076, 21.0581405
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 44e2dded-f0eb-4b0d-9e3d-2d0d9543d871
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9015546, 21.0589029
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 68ccc089-7608-403d-a02a-980357eecb52
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9023645, 21.0585484
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 5cb3a1f8-de55-4e87-b851-2aa61ffad5ed
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9025745, 21.0579547
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 3c0d296c-9c49-4124-a3bf-53c90b6a643f
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9092812, 21.0635717
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: d6312edd-302a-4c91-8512-1143ac40fd0b
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9033033, 21.0004417
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: d2262e70-416f-40ad-be87-264002854097
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8982232, 21.0133751
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 62890d7a-e80d-49ef-a367-2f949b73b7be
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9177877, 21.0485007
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 10bb1393-50b1-4489-8038-482f1e09fede
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8976567, 21.0242439
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 3f855336-bd97-4f6b-93f6-8db0dc55bf6c
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8974958, 21.0242263
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 2aa39c61-6d6a-4193-8c23-62feb8c820d2
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8978646, 21.0243584
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: c268a7ab-1611-4678-a774-97dd9226b062
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8982333, 21.023445
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 713e4c90-02e9-4b8f-afbc-47f5ad484ac4
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8967157, 21.0225776
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 73f785d4-0469-43e7-bc07-511931ad18d7
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.898046, 21.0245364
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 4ee40b78-0b08-47ac-b542-d39dad03995f
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9179792, 21.0490183
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: c824fede-c7a2-43d1-9164-05d9604b6ddb
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9175404, 21.0490103
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 495fe7bd-6721-4972-8fd9-266840ebe7f5
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9169217, 21.0489861
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: aeaf80e1-e7bf-455b-b217-0cce1496443d
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9169397, 21.0488877
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 9adfc959-ee75-4509-9b33-ddf9c61adca9
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9176153, 21.0486606
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 9c06a810-21bc-44a7-9ad6-4c3a25e6e38b
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.916944, 21.0486969
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 08ac866f-b3b2-45f0-9b5d-e10b9c3a1e29
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9001592, 21.0550038
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 831499cf-5013-4d50-a791-6270d56444eb
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8984724, 21.0436834
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: f55cb65e-b1be-4075-baa5-c2682590933d
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9162852, 21.0324841
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 30e35518-9e7e-4a1c-942b-e1d306ce6059
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9155604, 21.0317436
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 0eb52b21-6348-4e40-bb6d-6aa8ada1d156
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9203541, 21.0213574
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 801b0804-c657-49dd-bff8-6d0fbbd0ff6f
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9197915, 21.0213785
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: a5f0b0fc-edb2-421f-8cb4-80be67f2935d
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9183721, 21.0209502
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 498e16c7-85a5-4683-8262-3456b64ae4d8
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9181668, 21.0208806
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 8373bd74-e725-4ec9-bd68-a8e11f35c04d
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9179297, 21.0212043
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 98f2af17-2d8b-4b2d-96b5-98dd8610d14a
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9175401, 21.0212073
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 93e58ab6-dc57-4ce6-8192-77904c1413c9
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9262567, 21.0441
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 13a60b53-db99-4afe-94a0-feb9ac00ba22
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9260018, 21.0429373
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 6d9444ad-3aa4-4f33-875c-7fd0f67ef696
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9294202, 21.040807
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 8c25a52b-b42b-4195-96bd-15c437fa2028
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9281287, 21.0406298
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 14126fa5-94bc-43b9-bcc5-ebb9b1f25515
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9202872, 21.0214693
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: a5501b80-aba7-42c0-b241-a71011c52f06
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9203042, 21.0215225
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 14ad4466-5d6a-4e0f-b39a-9c2fe9874ad4
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9201152, 21.0220398
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 592ac299-4dd1-4735-a10e-f13c2e5ce329
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9197745, 21.0213955
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: ccd5d802-6ac6-4695-8467-1be5e80dfd0d
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9118026, 21.003644
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: a8ae1de7-9a67-4d93-b5af-ececd56dc222
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9125757, 21.0010241
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 31ad9230-0874-4796-9a35-00707df8ee27
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.8851201, 21.0259116
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+    <Placemark>
+      <description>
+        Survey Instance: 2e5b16f6-b51a-4c0f-8e46-f0409ad67f92
+      </description>
+      <styleUrl>#sh_red-circle</styleUrl>
+      <Point>
+        <coordinates>
+          105.9423891, 21.0315016
+        </coordinates>
+      </Point>
+    </Placemark>
+    
+  </Document>
+</kml>
